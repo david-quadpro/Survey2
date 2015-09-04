@@ -1,6 +1,7 @@
 'use strict';
 
 app.buildingListView = kendo.observable({
+// START_CUSTOM_CODE_buildingListView
     onShow: function(arg) {
 		
 		var siteID = arg.view.params.siteID;
@@ -13,11 +14,10 @@ app.buildingListView = kendo.observable({
 		ds.read();
 		
 	},
+// END_CUSTOM_CODE_buildingListView
     afterShow: function() {}
 });
 
-// START_CUSTOM_CODE_buildingListView
-// END_CUSTOM_CODE_buildingListView
 (function(parent) {
     var dataProvider = app.data.defaultProvider,
         flattenLocationProperties = function(dataItem) {
