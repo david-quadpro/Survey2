@@ -1,0 +1,14 @@
+<div data-role="view" data-title="Buildings" data-layout="main" data-model="app.buildingListView" data-show="app.buildingListView.onShow" data-after-show="app.buildingListView.afterShow">
+    <!-- START_CUSTOM_CODE_buildingListView -->
+    <!-- END_CUSTOM_CODE_buildingListView -->
+    <ul data-role="listview" data-style="inset" data-template="buildingListViewModelTemplate" data-bind="{ source: buildingListViewModel.dataSource, events: {click: buildingListViewModel.itemClick}}" data-pull-to-refresh="false" data-endless-scroll="false">
+    </ul>
+    <!-- START_CUSTOM_CODE_buildingListViewModel -->
+    <!-- END_CUSTOM_CODE_buildingListViewModel -->
+    <script type="text/x-kendo-template" id="buildingListViewModelTemplate">
+        <div class="image-with-text">
+            <h3>#: data['Name'] #</h3>
+            <p>#: data['Code'] #</p>
+        </div>
+    </script>
+</div>

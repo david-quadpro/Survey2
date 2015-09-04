@@ -1,15 +1,94 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true,
+  "views": [
+    {
+      "type": "view",
+      "components": [],
+      "name": "home",
+      "title": "Home",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "siteListViewModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Site",
+          "headerField": "Name",
+          "masterDetails": true,
+          "detailHeaderField": "Name",
+          "pullToRefresh": false,
+          "endlessScroll": false
+        }
+      ],
+      "name": "siteListView",
+      "title": "Sites",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "buildingListViewModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Building",
+          "headerField": "Name",
+          "subHeaderField": "Code",
+          "masterDetails": true,
+          "detailHeaderField": "Name",
+          "detailSubHeaderField": "Code",
+          "detailDescriptionField": "Site",
+          "pullToRefresh": false,
+          "endlessScroll": false
+        }
+      ],
+      "name": "buildingListView",
+      "title": "Buildings",
+      "addToNavigation": true,
+      "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "spaceListViewModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Space",
+          "headerField": "Code",
+          "subHeaderField": "Name",
+          "masterDetails": true,
+          "detailHeaderField": "Code",
+          "detailSubHeaderField": "Name",
+          "detailDescriptionField": "Building",
+          "pullToRefresh": false,
+          "endlessScroll": false
+        }
+      ],
+      "name": "spaceListView",
+      "title": "Spaces",
+      "addToNavigation": true,
+      "icon": "organize"
+    }
+  ],
   "dataProviders": [
     {
       "type": "dataProvider",
-      "title": "DefaultProvider",
       "name": "defaultProvider",
+      "title": "DefaultProvider",
       "source": "everlive",
-      "offlineStorage": true,
       "everliveKey": "OVorpmq0dQMSKajY",
-      "everliveUrl": ""
+      "offlineStorage": true
     }
-  ]
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "tabstrip",
+  "view": "home",
+  "transition": "slide",
+  "skin": "flat"
 }

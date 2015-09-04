@@ -1,0 +1,14 @@
+<div data-role="view" data-title="Sites" data-layout="main" data-model="app.siteListView" data-show="app.siteListView.onShow" data-after-show="app.siteListView.afterShow">
+    <!-- START_CUSTOM_CODE_siteListView -->
+    <!-- END_CUSTOM_CODE_siteListView -->
+    <ul data-role="listview" data-style="inset" data-template="siteListViewModelTemplate" data-bind="{ source: siteListViewModel.dataSource, events: {click: siteListViewModel.itemClick}}" data-pull-to-refresh="false" data-endless-scroll="false">
+    </ul>
+    <!-- START_CUSTOM_CODE_siteListViewModel -->
+    <!-- END_CUSTOM_CODE_siteListViewModel -->
+    <script type="text/x-kendo-template" id="siteListViewModelTemplate">
+        <div class="image-with-text">
+            <h3>#: data['Name'] #</h3>
+
+        </div>
+    </script>
+</div>

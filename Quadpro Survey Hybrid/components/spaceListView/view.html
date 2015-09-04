@@ -1,0 +1,14 @@
+<div data-role="view" data-title="Spaces" data-layout="main" data-model="app.spaceListView" data-show="app.spaceListView.onShow" data-after-show="app.spaceListView.afterShow">
+    <!-- START_CUSTOM_CODE_spaceListView -->
+    <!-- END_CUSTOM_CODE_spaceListView -->
+    <ul data-role="listview" data-style="inset" data-template="spaceListViewModelTemplate" data-bind="{ source: spaceListViewModel.dataSource, events: {click: spaceListViewModel.itemClick}}" data-pull-to-refresh="false" data-endless-scroll="false">
+    </ul>
+    <!-- START_CUSTOM_CODE_spaceListViewModel -->
+    <!-- END_CUSTOM_CODE_spaceListViewModel -->
+    <script type="text/x-kendo-template" id="spaceListViewModelTemplate">
+        <div class="image-with-text">
+            <h3>#: data['Code'] #</h3>
+            <p>#: data['Name'] #</p>
+        </div>
+    </script>
+</div>
