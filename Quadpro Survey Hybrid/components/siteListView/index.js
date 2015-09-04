@@ -58,7 +58,7 @@ app.siteListView = kendo.observable({
         siteListViewModel = kendo.observable({
             dataSource: dataSource,
             itemClick: function(e) {
-                app.mobileApp.navigate('#components/siteListView/details.html?uid=' + e.dataItem.uid);
+                app.mobileApp.navigate('#components/buildingListView/view.html?siteID=' + e.dataItem.id);
             },
             detailsShow: function(e) {
                 var item = e.view.params.uid,

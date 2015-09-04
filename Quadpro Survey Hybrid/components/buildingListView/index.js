@@ -1,7 +1,18 @@
 'use strict';
 
 app.buildingListView = kendo.observable({
-    onShow: function() {},
+    onShow: function(arg) {
+		
+		var siteID = arg.view.params.siteID;
+		var ds = arg.view.model.buildingListViewModel.dataSource;
+		ds.filter({
+			field: "Site",
+			operator: "eq",
+			value: siteID
+		});
+		ds.read();
+		
+	},
     afterShow: function() {}
 });
 
@@ -62,7 +73,7 @@ app.buildingListView = kendo.observable({
         buildingListViewModel = kendo.observable({
             dataSource: dataSource,
             itemClick: function(e) {
-                app.mobileApp.navigate('#components/buildingListView/details.html?uid=' + e.dataItem.uid);
+                app.mobileApp.navigate('#components/spaceListView/view.html?buildingID=' + e.dataItem.id);
             },
             detailsShow: function(e) {
                 var item = e.view.params.uid,

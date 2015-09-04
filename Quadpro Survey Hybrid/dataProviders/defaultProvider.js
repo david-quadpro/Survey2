@@ -4,6 +4,7 @@
     var provider = app.data.defaultProvider = new Everlive({
             offlineStorage: true,
             apiKey: 'OVorpmq0dQMSKajY',
+            url: '//platform.telerik.com/bs-api/v1/',
             scheme: 'https'
         }),
         accessTokenCacheKey = "access_token",

@@ -79,6 +79,7 @@
   "dataProviders": [
     {
       "type": "dataProvider",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
       "name": "defaultProvider",
       "title": "DefaultProvider",
       "source": "everlive",
@@ -87,8 +88,7 @@
     }
   ],
   "name": "kendoUiMobileApp",
-  "navigation": "tabstrip",
+  "navigation": "drawer",
   "view": "home",
-  "transition": "slide",
   "skin": "flat"
 }
