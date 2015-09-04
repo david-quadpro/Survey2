@@ -73,6 +73,35 @@
       "title": "Spaces",
       "addToNavigation": true,
       "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "form",
+          "components": [
+            {
+              "type": "field",
+              "name": "buildingList",
+              "title": "Building",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "field",
+              "name": "spaceList",
+              "title": "Space",
+              "inputType": "dropdownlist"
+            }
+          ],
+          "name": "surveyViewModel",
+          "submitButton": "Save",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "name": "surveyView",
+      "title": "Survey",
+      "addToNavigation": true,
+      "icon": "bookmarks"
     }
   ],
   "dataProviders": [

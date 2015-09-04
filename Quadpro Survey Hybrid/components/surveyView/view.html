@@ -1,0 +1,35 @@
+<div data-role="view" data-title="Survey" data-layout="main" data-model="app.surveyView" data-show="app.surveyView.onShow" data-after-show="app.surveyView.afterShow">
+    <div id="surveyViewModel" class="form-view">
+        <form>
+            <ul class="form-content" data-role="listview" data-style="inset">
+                <li>
+                    <label>Building
+                        <select data-bind="value: surveyViewModel.fields.buildingList" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>Space
+                        <select data-bind="value: surveyViewModel.fields.spaceList" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="button-group">
+                <a data-role="button" data-bind="events: { click: surveyViewModel.cancel }">Cancel</a>
+                <a class="primary" data-role="button" data-bind="events: { click: surveyViewModel.submit }">Save</a>
+            </div>
+        </form>
+        <!-- START_CUSTOM_CODE_surveyViewModel -->
+        <!-- END_CUSTOM_CODE_surveyViewModel -->
+    </div>
+    <!-- START_CUSTOM_CODE_surveyView -->
+    <!-- END_CUSTOM_CODE_surveyView -->
+</div>
