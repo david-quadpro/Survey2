@@ -1,0 +1,48 @@
+{
+  "ProjectName": "Quadpro Survey Hybrid",
+  "ProjectGuid": "13704cab-3dc8-462e-9c60-6b723fc9938f",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.QuadproSurveyHybrid",
+  "DisplayName": "Quadpro Survey Hybrid",
+  "Author": "",
+  "Description": "Quadpro Survey Hybrid",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{84e55b83-9f5d-42ab-9a36-1b6bf3352244}",
+  "WP8ProductID": "{a506077e-1f0a-4617-a6b9-8bd18327e6c3}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.QuadproSurveyHybrid",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "org.apache.cordova.network-information"
+  ]
+}
