@@ -4,7 +4,7 @@
             <ul class="form-content" data-role="listview" data-style="inset">
                 <li>
                     <label>Building
-                        <select data-bind="value: surveyViewModel.fields.buildingList" data-role="dropdownlist">
+                        <select data-bind="value: surveyViewModel.fields.building" data-role="dropdownlist">
                             <option value="First Option">First Option</option>
                             <option value="Second Option">Second Option</option>
                             <option value="Third Option">Third Option</option>
@@ -13,11 +13,49 @@
                 </li>
                 <li>
                     <label>Space
-                        <select data-bind="value: surveyViewModel.fields.spaceList" data-role="dropdownlist">
+                        <select data-bind="value: surveyViewModel.fields.space" data-role="dropdownlist">
                             <option value="First Option">First Option</option>
                             <option value="Second Option">Second Option</option>
                             <option value="Third Option">Third Option</option>
                         </select>
+                    </label>
+                </li>
+                <li>
+                    <label>Rate
+                        <select data-bind="value: surveyViewModel.fields.rate" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>Replacement Year
+                        <input data-bind="value: surveyViewModel.fields.replacementYear" type="number">
+                    </label>
+                </li>
+                <li>
+                    <label>Quantity
+                        <input data-bind="value: surveyViewModel.fields.quantity" type="number">
+                    </label>
+                </li>
+                <li>
+                    <label>Condition
+                        <select data-bind="value: surveyViewModel.fields.conditon" data-role="dropdownlist">
+                            <option value="First Option">First Option</option>
+                            <option value="Second Option">Second Option</option>
+                            <option value="Third Option">Third Option</option>
+                        </select>
+                    </label>
+                </li>
+                <li>
+                    <label>Location Description
+                        <input data-bind="value: surveyViewModel.fields.description" placeholder="where is it?" type="text">
+                    </label>
+                </li>
+                <li>
+                    <label>Photo
+                        <input data-bind="value: surveyViewModel.fields.photo" type="text">
                     </label>
                 </li>
             </ul>

@@ -10,8 +10,14 @@ app.surveyView = kendo.observable({
 (function(parent) {
     var surveyViewModel = kendo.observable({
         fields: {
-            spaceList: '',
-            buildingList: '',
+            photo: '',
+            description: '',
+            conditon: '',
+            quantity: '',
+            replacementYear: '',
+            rate: '',
+            space: '',
+            building: '',
         },
         submit: function() {},
         cancel: function() {}

@@ -82,15 +82,52 @@
           "components": [
             {
               "type": "field",
-              "name": "buildingList",
+              "name": "building",
               "title": "Building",
               "inputType": "dropdownlist"
             },
             {
               "type": "field",
-              "name": "spaceList",
+              "name": "space",
               "title": "Space",
               "inputType": "dropdownlist"
+            },
+            {
+              "type": "field",
+              "name": "rate",
+              "title": "Rate",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "field",
+              "name": "replacementYear",
+              "title": "Replacement Year",
+              "inputType": "number"
+            },
+            {
+              "type": "field",
+              "name": "quantity",
+              "title": "Quantity",
+              "inputType": "number"
+            },
+            {
+              "type": "field",
+              "name": "conditon",
+              "title": "Condition",
+              "inputType": "dropdownlist"
+            },
+            {
+              "type": "field",
+              "name": "description",
+              "title": "Location Description",
+              "inputType": "text",
+              "placeholder": "where is it?"
+            },
+            {
+              "type": "field",
+              "name": "photo",
+              "title": "Photo",
+              "inputType": "text"
             }
           ],
           "name": "surveyViewModel",
