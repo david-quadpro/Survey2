@@ -49,8 +49,7 @@
       ],
       "name": "buildingListView",
       "title": "Buildings",
-      "addToNavigation": true,
-      "icon": "organize"
+      "addToNavigation": false
     },
     {
       "type": "view",
